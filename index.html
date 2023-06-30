@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>Student Enrollment Form</nav>
+        <div class="input-form">
+            <h1>Register Here</h1>
+            <form action="#" id="input-form">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="input-field" id="name" required autofocus>
+                </div>
+                <br>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="input-field" id="email" required>
+                </div>
+                <br>
+                <div class="input-group">
+                    <label for="age">Age</label>
+                    <input type="number" class="input-field" id="age" required>
+                </div>
+                <br>
+                <div class="input-group">
+                    <label for="addr">Address</label>
+                    <input type="text" class="input-field" id="addr" required>
+                    
+                </div>
+                
+                <div class="input-select">
+                    <label for="gender" class="Label">Gender</label><br>
+                    <input type="radio" id="male" value="Male" name="gender">Male
+                    <input type="radio" id="female" value="Female" name="gender">Female
+                </div>
+                <div class="input-select">
+                    <label for="skills" class="Label">Skills</label><br>
+                    <input type="checkbox" name="skills" id="html" value="html">HTML
+                    <input type="checkbox" name="skills" id="css" value="css">CSS
+                    <input type="checkbox" name="skills" id="js" value="javascript">javascript
+                    <input type="checkbox" name="skills" id="react" value="react">React
+                    <input type="checkbox" name="skills" id="html" value="html">Java
+                </div>
+                <div class="buttons">
+                    <button type="button" id="add-btn">Enroll Student</button>
+                    <button type="button" id="delete-btn">Clear</button>
+                </div>
+            </form>
+        </div>
+        <div class="line"></div>
+        <div class="table">
+            <h1>Enrolled Students</h1>
+            <div class="scroll">
+                <table id="display">
+                    <tr>
+                        <th>Description</th>
+                        <th>Profile</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>
